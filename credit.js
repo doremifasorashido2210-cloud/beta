@@ -11,6 +11,17 @@ document.addEventListener("DOMContentLoaded", function(){
             backToTopButton.style.visibility = "hidden";
             scrollButton.style.visibility = "visible";
         }
+
+         const items = document.querySelectorAll(".img-wrap");
+
+        items.forEach(function(item) {
+            const rect = item.getBoundingClientRect();
+
+            // 要素の上端が画面の85%の位置まで来たら表示
+            if (rect.top < window.innerHeight * 0.85) {
+                item.classList.add("show");
+            }
+        })
     });
 
     backToTopButton.addEventListener("click", function() {
