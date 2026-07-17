@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>fansite-gs</title>
+
+    <meta name="robots" content="noindex,noarchive,nofollow,noimageindex">
+
+    <script>
+        function Alert() {
+            document.getElementById('Texts').src = './image/01_Caution.png';
+            document.getElementById('Button').src = './image/01_OkButton.png';
+
+            document.getElementById('Texts').alt = "当サイトはファンメイドの二次創作作品です。公式とは一切の関係がありません。";
+            document.getElementById('Button').alt = "OK";
+
+            document.getElementById('Button').onclick = Startsite;
+        }
+
+        function Startsite() {
+            location.href = "./title.html";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <img src="./image/00_Title.png" id="Texts" alt="Titleもしもし、あのね。">
+        <img src="./image/00_StartButton.png" id="Button" alt="StartButton" onclick="Alert()">
+    </div>
+</body>
+
+</html>

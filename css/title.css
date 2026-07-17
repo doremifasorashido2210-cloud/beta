@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: beige;
+    margin: 0;
+    overflow: hidden;
+}
+
+.box {
+    width: 100dvw;
+    height: 100dvh;
+    position: relative;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Menu {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    color: #333;
+    transition: right 0.5s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 20;
+    border: 5px solid #333;
+    border-top: none;
+    border-bottom: none;
+
+}
+
+.Menu.open {
+    right: -30%;
+}
+
+.bar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.bar span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.6s;
+}
+
+/* バツ印に変化するスタイル */
+.bar.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.bar.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.bar.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* メニューリストのスタイル */
+.Menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 80px;
+}
+
+
+.Menu ol {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 80px;
+}
+
+.Menu li {
+    padding: 20px 0;
+    border-bottom: 3px solid #444;
+    font-weight: bold;
+}
+
+.Menu li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.Menu li a:hover{
+    color: #7e590f;
+    text-decoration: line-through solid ;
+}
+
+.box{
+    position:absolute
+}
+
+.textBox{
+    opacity: 0;
+    anchor-name: --tag;
+    position:absolute;
+    left: 50%;
+    bottom : 5%;
+
+    z-index: 10;
+
+    transform: translate(-50%, 30%);
+
+    font-family: 'Vardana','Hiragino Sans','Meiryo',sans-serif;
+    font-size: 30px;
+    padding: 15px;
+
+    width: 80%;
+    background-color: #ffffff;
+    border: 5px solid #333;
+}
+
+#nametextbox{
+    opacity: 0;
+    position:absolute;
+    position-anchor: --tag;
+    left: anchor(left);
+    bottom : anchor(top);
+
+    z-index: 10;
+
+    font-family: 'Vardana','Hiragino Sans','Meiryo',sans-serif;
+    font-size: 30px;
+    padding: 5px;
+    padding-left: 15px;
+
+    width: 150px;
+    background-color: #ffffff;
+    border: 5px solid #333;
+
+}
+
+.phone{
+    position:relative;
+    opacity: 0;
+
+    z-index: 11;
+}
+
+#phonebase{
+    position:absolute;
+
+    position:absolute;
+    left: 50%;
+    top : 50%;
+
+    z-index: 11;
+
+    transform: translate(-50%, -10%);
+}
+#phone0{
+    position:absolute;
+    left: 50%;
+    top : 50%;
+
+    z-index: 15;
+
+    transform: translate(-50%, 1700%);
+}
+
+#phone1{
+    position:absolute;
+    left: 50%;
+    top : 50%;
+
+    z-index: 15;
+
+    transform: translate(-150%, 1260%)
+}
+
+#phone2{
+    position:absolute;
+    left: 50%;
+    top : 50%;
+
+    z-index: 15;
+
+    transform: translate(-50%, 1260%)
+}
+
+#phone3{
+    position:absolute;
+    left: 50%;
+    top : 50%;
+
+    z-index: 15;
+
+    transform: translate(50%, 1260%)
+}
+
+#phone4{
+    position:absolute;
+    left: 50%;
+    top : 50%;
+
+    z-index: 15;
+
+    transform: translate(-150%, 1400%)
+}
+
+#phone5{
+    position:absolute;
+    left: 50%;
+    top : 50%;
+
+    z-index: 15;
+
+    transform: translate(-50%, 1400%)
+}
+
+#phone6{
+    position:absolute;
+    left: 50%;
+    top : 50%;
+
+    z-index: 15;
+
+    transform: translate(50%, 1400%)
+}
+
+#phone7{
+    position:absolute;
+    left: 50%;
+    top : 50%;
+
+    z-index: 15;
+
+    transform: translate(-150%, 1550%)
+}
+
+#phone8{
+    position:absolute;
+    left: 50%;
+    top : 50%;
+
+    z-index: 15;
+
+    transform: translate(-50%, 1550%)
+}
+
+#phone9{
+    position:absolute;
+    left: 50%;
+    top : 50%;
+
+    z-index: 15;
+
+    transform: translate(50%, 1550%)
+}
+
+#phoneOK{
+    position:absolute;
+    left: 50%;
+    top : 50%;
+
+    z-index: 15;
+
+    transform: translate(-50%, 600%)
+}
+
+#homebackground{
+    position:absolute;
+
+    position:absolute;
+    left: 50%;
+    top : 50%;
+
+    z-index: 1;
+
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+
+    opacity: 0;
+}
+
+#startbutton{
+    opacity: 1;
+}

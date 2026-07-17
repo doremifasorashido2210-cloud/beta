@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 20px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 5px solid #333;
+    border-left: none;
+    display: block;
+    z-index: 10;
+}
+
+body {
+    background-color: #f5f5dc;
+    overflow-x: hidden;
+}
+
+.Menu {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    color: #333;
+    transition: right 0.5s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 20;
+    border: 5px solid #333;
+    border-top: none;
+    border-bottom: none;
+
+}
+
+.Menu.open {
+    right: -30%;
+}
+
+.bar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 30;
+}
+
+.bar span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.6s;
+}
+
+/* バツ印に変化するスタイル */
+.bar.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.bar.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.bar.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* メニューリストのスタイル */
+.Menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 80px;
+}
+
+
+.Menu ol {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 80px;
+}
+
+.Menu li {
+    padding: 20px 0;
+    border-bottom: 3px solid #444;
+    font-weight: bold;
+}
+
+.Menu li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.Menu li a:hover{
+    color: #7e590f;
+    text-decoration: line-through solid ;
+}
+
+body{
+    font-family: 'Vardana','Hiragino Sans','Meiryo',sans-serif;
+    color:#333;
+    margin: 0;
+    padding: 0;
+}
+
+body a{
+    color:#333;
+    
+}
+
+body a:hover{
+    color: #7e590f;
+    text-decoration: line-through solid ;
+}
+
+body h1{
+
+}
+
+body h2{
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    width: 100%;
+    background-color: #ffffff;
+    border: 5px solid #333;
+    border-right: none;
+    display: block;
+
+}
+
+body p{
+    padding: 20px;
+    margin: 0 5%;
+    background-color: #ffffff;
+    border: 5px solid #333;
+    display: block;
+
+}
+
+
+
+body .writer li{
+    padding: 20px;
+    font-weight: bolder;
+    font-size: large;
+    margin: 0px;
+    background-color: #ffffff;
+    border: 5px solid #333;
+    border-bottom: none;
+    display: block;
+
+}
+
+body .writer dl{
+    padding: 20px;
+    margin: 0px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 5px solid #333;
+    border-top: none;
+    display: block;
+}
+
+body .writer dl dt{
+    border-top: 2px dotted #333;
+    font-family: 'Arial', 'Hiragino Maru Gothic ProN W4', 'Noto Sans CJK JP', 'Meiryo', sans-serif;
+    padding-top: 10px;
+}
+
+body .writer dl dt:before{
+    content:'> ';
+}
+
+body .writer dl dd{
+    margin-left: 0;
+    padding-bottom: 10px;
+}
+
+body ol{
+    margin: 0 5%;
+    padding: 0;
+    list-style: none;
+}
+
+body ol li{
+
+}
+
+body ol p{
+}
+
+body dl{
+    padding: 0px;
+    margin: 0;
+    background-color: none;
+    border: none;
+    display: block;
+
+}
+#renew{
+    padding: 20px;
+    background-color: #ffffff;
+    border: 5px solid #333;
+    display: block;
+    margin-bottom: 30px;
+
+}
+
+.ss{
+    position: center;
+}
+
+.img-wrap{
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.img-wrap.show {
+    opacity: 1;
+}
+
+#TOP{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+
+    z-index: 40;
+}
+
+
+#SCROLL{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;;
+    border: none;
+    cursor: pointer;
+    visibility: visible;
+
+    z-index: 40;
+}
+
