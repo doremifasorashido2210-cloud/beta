@@ -221,7 +221,18 @@ body dl{
 }
 
 .ss{
-    position: center;
+    position: relative;
+
+
+}
+
+#Texts{
+    display: block;
+    left: 50%;
+    width: 100vw;
+
+    margin: 0 auto;
+
 }
 
 .img-wrap{
