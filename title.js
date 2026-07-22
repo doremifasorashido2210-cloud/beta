@@ -1,3 +1,5 @@
+//comment
+
 $(function () {
     $('.bar').click(function () {
         // メニューの開閉状態を切り替える
